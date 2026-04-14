@@ -1,4 +1,4 @@
-import { clientCache } from "./middlewares/cache.js";
+﻿import { clientCache } from "./middlewares/cache.js";
 import appConfig from "./configs/app.config.js";
 import express from "express";
 import errorHandler from "./middlewares/errorHandler.js";
@@ -36,6 +36,6 @@ app.use("/otakudesu", otakudesuRouter);
 app.use("/kuramanime", kuramanimeRouter);
 app.use("/samehadaku", samehadakuRouter);
 app.use(errorHandler);
-app.listen(PORT, () => {
-    console.log(`server is running on http://localhost:${PORT}`);
+
 });
+export default app;
